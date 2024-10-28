@@ -1,14 +1,10 @@
 NUMBER                 # Object number
-X_IMAGE                # Object position along x
-Y_IMAGE                # Object position along y
-X_WORLD                # Barycenter position along world x axis
-Y_WORLD                # Barycenter position along world y axis
-FLUX_ISO               # Isophotal flux
-FLUXERR_ISO            # RMS error for isophotal flux
-FLUX_AUTO              # Flux within a Kron-like elliptical aperture
-FLUXERR_AUTO           # RMS error for AUTO flux
-MAG_AUTO               # Magnitude in AUTO aperture
-MAGERR_AUTO            # RMS error for AUTO magnitude
-FLUX_RADIUS            # Fraction-of-light radii
-BACKGROUND             # Background at centroid position
-FLAGS                  # Extraction flags
+X_IMAGE         # X 位置
+Y_IMAGE         # Y 位置
+ALPHA_J2000     # 目標的赤經（RA）
+DELTA_J2000     # 目標的赤緯（Dec）
+MAG_AUTO        # 自動測量的星等，適合暗弱目標
+MAGERR_AUTO     # 自動星等的誤差
+FLUX_AUTO       # 自動測量的光通量
+FLUXERR_AUTO    # 光通量誤差
+FLAGS           # 偵測旗標，可幫助排除非天體物

@@ -12,12 +12,12 @@ PARAMETERS_NAME  default.param  # name of the file containing catalog contents
 #------------------------------- Extraction ----------------------------------
  
 DETECT_TYPE      CCD            # CCD (linear) or PHOTO (with gamma correction)
-DETECT_MINAREA   10              # min. # of pixels above threshold
-DETECT_THRESH    3.0            # <sigmas> or <threshold>,<ZP> in mag.arcsec-2
-ANALYSIS_THRESH  3.0            # <sigmas> or <threshold>,<ZP> in mag.arcsec-2
+DETECT_MINAREA   3              # 最小偵測面積，以像素數表示，設定較低的值以偵測小型目標
+DETECT_THRESH    0.5            # 偵測閾值，設定較低的值以偵測暗弱天體
+ANALYSIS_THRESH  0.5            # 分析閾值應該與偵測閾值相同或略低，以便在偵測到的天體上進行更精確的分析
  
 FILTER           Y              # apply filter for detection (Y or N)?
-FILTER_NAME      default.conv   # name of the file containing the filter
+FILTER_NAME      default.conv   # 使用指定的濾波器
  
 DEBLEND_NTHRESH  32             # Number of deblending sub-thresholds
 DEBLEND_MINCONT  0.005          # Minimum contrast parameter for deblending
@@ -38,7 +38,7 @@ PHOT_PETROPARAMS 2.0, 3.5       # MAG_PETRO parameters: <Petrosian_fact>,
 SATUR_LEVEL      60000.0        # level (in ADUs) at which arises saturation
 SATUR_KEY        SATURATE       # keyword for saturation level (in ADUs)
  
-MAG_ZEROPOINT    0.0            # magnitude zero-point
+MAG_ZEROPOINT    0.0            # 星等零點，可根據影像校正後的零點調整
 MAG_GAMMA        4.0            # gamma of emulsion (for photographic scans)
 GAIN             0.0            # detector gain in e-/ADU
 GAIN_KEY         GAIN           # keyword for detector gain in e-/ADU
