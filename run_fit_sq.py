@@ -10,7 +10,7 @@ def get_fits_corners_and_time(fits_file):
         header = hdulist[0].header
         wcs = WCS(header)
         
-        # 提取拍攝時間
+        # 擷取拍攝時間
         date_obs = header.get('DATE-OBS', 'N/A')
         
         # 取得圖像的尺寸
@@ -73,7 +73,7 @@ print(f"右上角座標 - RA: {fits_info['upper_right_ra']} 度, Dec: {fits_info
 # 讀取 MPCORB 資料
 mpc_data = read_mpcorb(mpcorb_file)
 
-# 查找在 FITS 檔案範圍內的小行星
+# 尋找在 FITS 檔案範圍內的小行星
 asteroids_in_rectangle = find_asteroids_in_rectangle(
     mpc_data,
     fits_info['lower_left_ra'],

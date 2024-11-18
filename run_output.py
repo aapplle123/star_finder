@@ -5,6 +5,8 @@ from astropy.table import Table
 from astropy.coordinates import SkyCoord, Angle
 from astropy import units as u
 
+
+
 def plot_fits_with_asteroids(fits_file, cat_file):
     """將 FITS 檔案顯示並將 CAT 檔案中小行星的位置標記"""
     # 讀取 FITS 檔案
