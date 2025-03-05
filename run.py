@@ -12,3 +12,5 @@ plt.imshow(image, cmap='gray', origin='lower')
 # Overlay detections
 plt.scatter(catalog[:, 1], catalog[:, 2], marker='o', color='red', s=10)
 plt.show()
+
+# abc
